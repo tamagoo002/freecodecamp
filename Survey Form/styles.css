@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: 
+        url('https://asset.gecdesigns.com/img/background-templates/dark-background-with-a-glowing-squares-pattern-design-sr06012409-1704700062937-cover.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#description {
+    color: #ccc;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+form {
+    background-color: #8967B3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+legend {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+button {
+    background-color: #117554;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
